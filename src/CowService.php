@@ -2,7 +2,7 @@
 
 namespace Drupal\drupalup_service;
 
-use Drupal\Core\Session\AccountProxy;
+use Drupal\Core\Session\AccountInterface;
 
 /**
  * CowService is a simple exampe of a Drupal 8 service.
@@ -15,7 +15,7 @@ class CowService {
   /**
    * Part of the DependencyInjection magic happening here.
    */
-  public function __construct(AccountProxyInterface $currentUser) {
+  public function __construct(AccountInterface $currentUser) {
     $this->currentUser = $currentUser;
   }
 
