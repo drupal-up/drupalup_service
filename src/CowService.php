@@ -15,7 +15,7 @@ class CowService {
   /**
    * Part of the DependencyInjection magic happening here.
    */
-  public function __construct(AccountProxyInterface $currentUser) {
+  public function __construct(AccountProxy $currentUser) {
     $this->currentUser = $currentUser;
   }
 
